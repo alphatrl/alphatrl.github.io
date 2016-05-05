@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+h2{
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+}
+
+p, li {
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+}
+
+#upgrade_message {
+    text-align: center;
+}
