@@ -1,6 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 
-.nav ul{
+.top-bar{
+    background-color: #FFFFFF;
+}
+
+.top-bar ul{
     list-style-type: none;
     width: 100%;
     margin: 0;
@@ -8,19 +11,30 @@
     padding-top: 5px;
     padding-bottom: 5px;
     overflow: hidden;
-    background-color: #9E9E9E;
+    background-color: #FFFFFF;
 }
 
-.nav li{
+.top-bar li{
     display: inline;
     float: left;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5.25px;
+    font-size: 120%;
 }
 
-.nav li a{
-    font-family: 'Open Sans', sans-serif;
-    font-style: 700;
-    text-transform: capitalize;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 14px 16px;
+.top-bar li a{
+    font-family: 'Lato', sans-serif;
+    font-style: 300;
+    color: #919191;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-bar-title li a{
+    font-family: 'Raleway', sans-serif;
+    font-style: 200;
+    color: #000000;
+    padding: 14px;
+    font-size: 125%;
 }
