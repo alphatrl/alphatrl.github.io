@@ -1,0 +1,15 @@
+.contact-me{
+    background-color: inherit;
+}
+
+.contact-me li {
+    display: inline;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+img {
+    width: 2em;
+    height: 2em;
+    border: 0;
+}

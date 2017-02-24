@@ -3,16 +3,41 @@
 h1{
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 50px;
 }
 
 h2{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #5A5A5A;
 }
 
 p, li {
   font-family: 'Lato';
   font-weight: 400;
+}
+
+
+.center-screen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50%;
+    display: table;
+    text-align: center;
+}
+
+.center-screen span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.center-screen h1 {
+    font-size: 3em;
+}
+
+.center-screen h2 {
+    font-size: 2em;
+    line-height: 0.9em;
+    color: #5A5A5A;
 }

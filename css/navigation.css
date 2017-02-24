@@ -11,7 +11,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     overflow: hidden;
-    background-color: #FFFFFF;
+    background-color: inherit;
 }
 
 .top-bar li{
@@ -19,22 +19,22 @@
     float: left;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 5.25px;
-    font-size: 120%;
+    letter-spacing: 0.5em;
+    font-size: 1.23em;
 }
 
-.top-bar li a{
+.top-bar-right li a{
     font-family: 'Lato', sans-serif;
     font-style: 300;
     color: #919191;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 20px;
+    padding: 20px 20px;
 }
 
 .top-bar-title li a{
     font-family: 'Raleway', sans-serif;
     font-style: 200;
     color: #000000;
-    padding: 14px;
-    font-size: 125%;
+    padding-left: 20px;
+    font-size: 1.25em;
 }
