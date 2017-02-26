@@ -1,40 +1,49 @@
 
-.top-bar{
+.header{
     background-color: #FFFFFF;
-}
-
-.top-bar ul{
-    list-style-type: none;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    overflow: hidden;
-    background-color: inherit;
+    text-decoration:  none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.top-bar li{
-    display: inline;
-    float: left;
+.header-container{
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.header-box{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 0.5em;
-    font-size: 1.23em;
+    font-size: 1.20em;
 }
 
-.top-bar-right li a{
+.header-title{
+    display: inline-block;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.header-title a{
+    font-family: 'Raleway', sans-serif;
+    font-style: 200;
+    font-size: 1.25em;
+    color: #000000;
+}
+
+.header-links{
+    float: right;
+    margin: 20px;
+    padding: 20px 0px;
+}
+
+.header-links a{
     font-family: 'Lato', sans-serif;
     font-style: 300;
     color: #919191;
-    margin: 20px;
-    padding: 20px 20px;
-}
-
-.top-bar-title li a{
-    font-family: 'Raleway', sans-serif;
-    font-style: 200;
-    color: #000000;
-    padding-left: 20px;
-    font-size: 1.25em;
 }

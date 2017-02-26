@@ -2,14 +2,13 @@
     background-color: inherit;
 }
 
-.contact-me li {
-    display: inline;
-    padding-left: 2em;
-    padding-right: 2em;
+.icon-button{
+    display: inline-block;
+    line-height: 80px;
+    margin: 20px;
 }
 
-img {
-    width: 2em;
-    height: 2em;
-    border: 0;
+.icon-button img{
+    height: 36px;
+    vertical-align: middle;
 }
