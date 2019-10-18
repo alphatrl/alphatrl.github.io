@@ -1,0 +1,24 @@
+.contact-me {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    outline: 1px solid rgba(0,0,0, 0.56);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-button {
+    line-height: 80px;
+    padding: 0 32px;
+    flex-basis: auto;
+}
+
+.icon-button img{
+    width: 36px;
+    height: auto;
+}
