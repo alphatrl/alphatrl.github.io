@@ -11,16 +11,3 @@ a {
 body {
   margin: 0;
 }
-
-/* Padding Size */
-.padding-L {
-  padding: 64px;
-}
-
-.padding-M {
-  padding: 48px;
-}
-
-.padding-S {
-  padding: 24px;
-}
