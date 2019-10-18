@@ -49,3 +49,31 @@
 .header-links {
     padding-left: 40px
 }
+
+@media screen and (max-width: 750px) {
+    .header-container {
+        text-align: center;
+        padding: 24px 0;
+
+        display: grid;
+        grid-template: 
+        "left left"
+        "right right"
+        /1fr 1fr;
+    }
+
+    .header-box {
+        text-align: center;
+        grid-area: left;
+    }
+
+    .header-nav {
+        text-align: center;
+        justify-content: space-around;
+        grid-area: right;
+    }
+
+    .header-links {
+        padding: 8px 0;
+    }
+}
