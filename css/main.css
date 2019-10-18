@@ -1,46 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:200,300,500|Source+Serif+Pro');
-
-h1{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
-
-h2{
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Source+Code+Pro:700&display=swap');
+h1, h2, p, li{
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-p, li {
-  'Source Serif Pro', serif;
+  color: rgba(0, 0, 0, 0.87)
 }
 
 a {
     text-decoration:  none;
 }
 
-
-.center-screen {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 50%;
-    display: table;
-    text-align: center;
+body {
+  margin: 0;
 }
 
-.center-screen span {
-    display: table-cell;
-    vertical-align: middle;
+/* Padding Size */
+.padding-L {
+  padding: 64px;
 }
 
-.center-screen h1 {
-    font-size: 3em;
+.padding-M {
+  padding: 48px;
 }
 
-.center-screen h2 {
-    font-size: 2em;
-    line-height: 0.9em;
-    color: #5A5A5A;
+.padding-S {
+  padding: 24px;
 }
