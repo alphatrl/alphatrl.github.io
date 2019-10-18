@@ -1,50 +1,51 @@
-
-.header{
-    background-color: #FFFFFF;
+.header {
     width: 100%;
     height: 10%;
-    text-decoration:  none;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
-.header-container{
+.header-container {
+    width: 80%;
     height: 100%;
     margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-}
-
-.header-box{
-    display: inline-block;
     vertical-align: middle;
-    width: 50%;
 
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
+    /* Fun with flex */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header-box {
+    flex: 1
+}
+
+.header-box a {
+    font-family: 'Lato';
     font-size: 1.20em;
+    letter-spacing: 0.3em;
+    color: rgba(0,0,0,0.87);
 }
 
-.header-title{
-    display: inline-block;
+.header-title {
+    font-size: 1.30em;
     margin: 0;
-    padding: 10px 0;
 }
 
-.header-title a{
-    font-family: 'Raleway', sans-serif;
-    font-style: 200;
-    font-size: 1.25em;
-    color: #000000;
+.header-title a {
+    font-style: 700;
+    letter-spacing: 0.1em;
 }
 
-.header-links{
-    float: right;
-    margin: 20px;
-    padding: 20px 0px;
+.header-nav {
+    text-transform: uppercase;
+    text-align: right;
+    
+    display: flex;
+    justify-content: flex-end;
 }
 
-.header-links a{
-    font-family: 'Lato', sans-serif;
-    font-style: 300;
-    color: #919191;
+.header-links {
+    padding-left: 40px
 }

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:200,300,500|Source+Serif+Pro');
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Source+Code+Pro:700&display=swap');
 h1{
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -11,7 +10,7 @@ h2{
 }
 
 p, li {
-  'Source Serif Pro', serif;
+  font-family: 'Source Code Pro', serif;
 }
 
 a {
