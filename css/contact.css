@@ -1,9 +1,7 @@
 .contact-me {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: 80px;
-    outline: 1px solid rgba(0,0,0, 0.56);
+    padding-top: 16px;
 
     display: flex;
     flex-direction: row;
@@ -13,7 +11,6 @@
 }
 
 .icon-button {
-    line-height: 80px;
     padding: 0 32px;
     flex-basis: auto;
 }
@@ -22,3 +19,16 @@
     width: 36px;
     height: auto;
 }
+
+@media screen and (min-width: 800px) {
+  .contact-me {
+      padding-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-me {
+        padding-top: 80px;
+    }
+  }
+  
