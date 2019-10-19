@@ -56,26 +56,20 @@
         padding: 24px 0;
         text-align: center;
 
-        display: grid;
-        grid-template: 
-        "left left"
-        "right right"
-        /1fr 1fr;
+        flex-flow: column wrap;
     }
 
     .header-box {
         text-align: center;
-        grid-area: left;
     }
 
     .header-nav {
         text-align: center;
         justify-content: space-around;
-        grid-area: right;
     }
 
     .header-links {
-        padding: 8px 0;
+        padding: 0px 24px;
     }
 }
 
