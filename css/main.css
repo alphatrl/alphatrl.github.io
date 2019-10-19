@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Source+Code+Pro:700&display=swap');
-h1, h2, p, li{
+h1, h2, p, li, a{
   font-family: 'Lato', sans-serif;
   color: rgba(0, 0, 0, 0.87)
 }
