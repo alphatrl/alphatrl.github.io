@@ -75,7 +75,7 @@
     padding-left: 80px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .body-container {
         width: 90%;
     }
