@@ -22,11 +22,21 @@
 }
 
 @media screen and (max-width: 750px) {
+  .about-body {
+    width: 90%;
+  }
+  
   .about-body h1 {
     font-size: 2.5em;
   }
 
   .about-body h2 {
     font-size: 1.5em;  
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-body {
+    width: 80%;
   }
 }
