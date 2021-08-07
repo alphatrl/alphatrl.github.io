@@ -33,12 +33,12 @@ class MyDocument extends Document {
             {this.props.styleTags}
 
             <link
-              href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+              href="https://fonts.googleapis.com/css?family=Lato:500,600&display=swap"
               rel="preload"
               as="style"
             />
             <link
-              href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+              href="https://fonts.googleapis.com/css?family=Lato:500,600&display=swap"
               rel="stylesheet"
             />
           </Head>
