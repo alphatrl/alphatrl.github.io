@@ -21,12 +21,24 @@ interface Props {
 const Wrapper = styled.div`
   display: flex;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: ${(props) => props.theme.mobileSize}) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
 `;
 
 const StyledImage = styled.div`
   width: 100%;
   max-width: 400px;
   margin-right: 3.5rem;
+
+  @media screen and (max-width: ${(props) => props.theme.mobileSize}) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 `;
 
 const DescriptionWrapper = styled.div`
@@ -43,12 +55,27 @@ const DescriptionWrapper = styled.div`
   h3 {
     margin: 0;
     margin-top: 0.4rem;
+    font-weight: 600;
     color: ${(props) => props.theme.text600};
   }
 
   p {
     line-height: 1.35rem;
     font-weight: 500;
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.mobileSize}) {
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+
+    h1 {
+      font-size: 2.7em;
+    }
+
+    h3 {
+      font-size: 1.1em;
+    }
   }
 `;
 

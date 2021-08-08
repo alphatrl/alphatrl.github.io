@@ -14,6 +14,10 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, 32px);
   grid-gap: 16px;
+
+  @media screen and (max-width: ${(props) => props.theme.mobileSize}) {
+    justify-content: center;
+  }
 `;
 
 const StyledIcon = styled.a`

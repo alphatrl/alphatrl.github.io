@@ -7,6 +7,9 @@ const Wrapper = styled.div`
   margin: 0 auto;
   width: 90%;
   max-width: 1000px;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
 `;
 
 const Header = styled.div`
