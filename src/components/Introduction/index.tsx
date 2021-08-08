@@ -5,6 +5,7 @@ import Social from './components/Social';
 
 const Wrapper = styled.div`
   height: calc(100vh / 5 * 4);
+  min-height: 300px;
   background-color: #f0f0f0;
   padding-bottom: 32px;
   display: flex;

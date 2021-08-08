@@ -1,5 +1,8 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
-  target: 'serverless',
+  basePath: '',
+  assetPrefix: isProd ? './' : '',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
