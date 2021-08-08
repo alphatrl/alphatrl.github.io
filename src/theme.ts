@@ -6,6 +6,8 @@ export const theme = {
   linkColor: '#0575f8',
 
   text600: '#666666',
+
+  mobileSize: '820px',
 };
 
 export const GlobalStyle = createGlobalStyle`

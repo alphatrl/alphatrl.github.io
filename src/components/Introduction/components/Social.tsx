@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   grid-gap: 32px;
   margin-top: 54px;
   padding-bottom: 24px;
+
+  @media screen and (max-width: ${(props) => props.theme.mobileSize}) {
+    justify-content: center;
+  }
 `;
 
 const StyledIcon = styled.a`
