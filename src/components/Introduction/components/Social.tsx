@@ -33,7 +33,7 @@ const Social: React.FC = () => {
       <StyledIcon href="https://twitter.com/alphatrl" target="_blank">
         <Icon name="twitter" width={32} height={32} />
       </StyledIcon>
-      <StyledIcon href="mailto://hello@amostan.me">
+      <StyledIcon href="mailto:hello@amostan.me">
         <Icon name="email" width={32} height={32} />
       </StyledIcon>
     </Wrapper>

@@ -5,7 +5,7 @@ export const PROJECT_DATA = [
     subtitle: 'User Interface Design/ Web Development',
     description:
       'SMU Shortcuts consolidates the important websites used by Singapore Management University’s undergraduates. It serves as a guide for upcoming freshmen to the digital world of SMU.',
-    image: '/images/project/smu_shortcuts.png',
+    image: 'images/project/smu_shortcuts.png',
     external_link: [
       {
         image: 'web',
@@ -23,7 +23,7 @@ export const PROJECT_DATA = [
     subtitle: 'App & Web Development',
     description:
       'Huat is an app dedicated to show the latest lottery results in Singapore. Huat web and mobile app were created to learn about the React and React Native framework respectively.',
-    image: '/images/project/huat_app_light.png',
+    image: 'images/project/huat_app_light.png',
     external_link: [
       {
         image: 'play_store',
@@ -41,7 +41,7 @@ export const PROJECT_DATA = [
     subtitle: 'Pebble Watch Development',
     description:
       'A watchface developed for the Pebble smartwatch. Created to showcase the information I want to know on my smartwatch while retaining a minimal design.',
-    image: '/images/project/minimal.png',
+    image: 'images/project/minimal.png',
     external_link: [
       {
         image: 'web',

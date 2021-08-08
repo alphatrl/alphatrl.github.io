@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -30,10 +29,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const StyledImage = styled.div`
+const StyledImage = styled.img`
   width: 100%;
   max-width: 400px;
   margin-right: 3.5rem;
+  border-radius: 12px;
 
   @media screen and (max-width: ${(props) => props.theme.mobileSize}) {
     margin-right: 0;
@@ -86,15 +86,7 @@ const Project: React.FC<Props> = (props) => {
 
   return (
     <Wrapper>
-      <StyledImage>
-        <Image
-          src={image}
-          alt={title}
-          layout="responsive"
-          width={400}
-          height={300}
-        />
-      </StyledImage>
+      <StyledImage src={image} alt={title} />
 
       <DescriptionWrapper>
         <h1>{title}</h1>
