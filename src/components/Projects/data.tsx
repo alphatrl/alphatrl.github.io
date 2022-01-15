@@ -22,7 +22,7 @@ export const PROJECT_DATA = [
     title: 'Huat',
     subtitle: 'App & Web Development',
     description:
-      'Huat is an app dedicated to show the latest lottery results in Singapore. Huat web and mobile app were created to learn about the React and React Native framework respectively.',
+      'Huat is an app dedicated to show the latest lottery results in Singapore. Huat mobile and web apps were created to learn about the React and React Native framework respectively.',
     image: 'images/project/huat_app_light.png',
     external_link: [
       {
