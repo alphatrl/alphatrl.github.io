@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
         with:
           persist-credentials: false
 
@@ -34,7 +34,7 @@ jobs:
         if: success()
         with:
           target_branch: gh-pages
-          build_dir: out
+          build_dir: dist
           commit_message: 'chore: deploy to GitHub Pages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
