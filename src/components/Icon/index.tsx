@@ -1,11 +1,10 @@
-import dynamic from 'next/dynamic';
-import React, { useCallback } from 'react';
+import React, { useCallback, lazy, Suspense } from 'react';
 
-const Email = dynamic(() => import('./components/Email'));
-const Github = dynamic(() => import('./components/Github'));
-const PlayStore = dynamic(() => import('./components/PlayStore'));
-const Twitter = dynamic(() => import('./components/Twitter'));
-const Web = dynamic(() => import('./components/Web'));
+const Email = lazy(() => import('./components/Email'));
+const Github = lazy(() => import('./components/Github'));
+const PlayStore = lazy(() => import('./components/PlayStore'));
+const Twitter = lazy(() => import('./components/Twitter'));
+const Web = lazy(() => import('./components/Web'));
 
 interface Props {
   name: string;
@@ -33,7 +32,11 @@ const Icon: React.FC<Props> = (props) => {
     }
   }, [height, name, width]);
 
-  return getIcon();
+  return (
+    <Suspense fallback={null}>
+      {getIcon()}
+    </Suspense>
+  );
 };
 
 export default Icon;
