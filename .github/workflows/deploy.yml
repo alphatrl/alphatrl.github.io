@@ -21,10 +21,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build NextJS
+      - name: Build project and prepare for deployment
         env:
           NODE_ENV: production
-        run: yarn build
+        run: |
+          yarn build
+          touch dist/.nojekyll
+          cp CNAME ./dist
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
