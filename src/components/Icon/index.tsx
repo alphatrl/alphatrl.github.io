@@ -1,4 +1,4 @@
-import React, { useCallback, lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useCallback } from 'react';
 
 const Email = lazy(() => import('./components/Email'));
 const Github = lazy(() => import('./components/Github'));
@@ -32,11 +32,7 @@ const Icon: React.FC<Props> = (props) => {
     }
   }, [height, name, width]);
 
-  return (
-    <Suspense fallback={null}>
-      {getIcon()}
-    </Suspense>
-  );
+  return <Suspense fallback={null}>{getIcon()}</Suspense>;
 };
 
 export default Icon;

@@ -31,16 +31,10 @@ const SEO: React.FC<Props> = function (props) {
       <meta name="og:title" content={`${title} | ${siteMetadata.title}`} />
       <meta name="og:description" content={metaDescription} />
       <meta name="og:type" content="website" />
-      <meta
-        name="og:image"
-        content={logoUrl}
-      />
+      <meta name="og:image" content={logoUrl} />
       <meta name="og:url" content={siteMetadata.siteUrl} />
       <meta name="twitter:card" content={metaDescription} />
-      <meta
-        name="twitter:image"
-        content={logoUrl}
-      />
+      <meta name="twitter:image" content={logoUrl} />
       <meta name="twitter:creator" content={siteMetadata.author} />
       <meta name="twitter:url" content={siteMetadata.siteUrl} />
       <meta name="twitter:title" content={`${title} | ${siteMetadata.title}`} />
