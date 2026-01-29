@@ -14,9 +14,9 @@ jobs:
           persist-credentials: false
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v6
         with:
-          node-version: '16'
+          node-version: '22'
 
       - name: Install dependencies
         run: yarn install
