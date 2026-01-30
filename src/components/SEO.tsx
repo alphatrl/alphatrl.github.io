@@ -1,32 +1,23 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 
 import config from '../config';
 
 interface Props {
-  lang?: string;
   description?: string;
   title: string;
 }
 
 const SEO: React.FC<Props> = function (props) {
-  const { description, title, lang = 'en' } = props;
+  const { description, title } = props;
   const { siteMetadata } = config;
 
   const metaDescription = description || siteMetadata.description;
   const logoUrl = new URL('logo-meta.png', siteMetadata.siteUrl).toString();
 
   return (
-    <Helmet>
-      <title>
-        {title} | {siteMetadata.title}
-      </title>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-      />
+    <React.Fragment>
+      <title>{`${title} | ${siteMetadata.title}`}</title>
 
-      <html lang={lang} />
       <meta name="description" content={metaDescription} />
       <meta name="og:title" content={`${title} | ${siteMetadata.title}`} />
       <meta name="og:description" content={metaDescription} />
@@ -39,7 +30,7 @@ const SEO: React.FC<Props> = function (props) {
       <meta name="twitter:url" content={siteMetadata.siteUrl} />
       <meta name="twitter:title" content={`${title} | ${siteMetadata.title}`} />
       <meta name="twitter:description" content={metaDescription} />
-    </Helmet>
+    </React.Fragment>
   );
 };
 
