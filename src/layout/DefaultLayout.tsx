@@ -11,7 +11,7 @@ interface Props {
   title?: string;
 }
 
-const DefaultLayout: React.FC<Props> = (props) => {
+const DefaultLayout: React.FC<React.PropsWithChildren<Props>> = (props) => {
   const { title = 'Amos Tan', children } = props;
 
   return (
