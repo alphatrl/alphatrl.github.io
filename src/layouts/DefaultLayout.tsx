@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SEO from '../components/SEO';
+import SEO from '../shared/components/SEO';
 
 const Wrapper = styled.div`
   margin: 0 auto;
