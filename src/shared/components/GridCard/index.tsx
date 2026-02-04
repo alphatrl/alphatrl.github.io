@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 interface GridCardProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
@@ -6,7 +6,7 @@ interface GridCardProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-const GridCard = forwardRef<HTMLDivElement, GridCardProps>(
+const GridCard = React.forwardRef<HTMLDivElement, GridCardProps>(
   (
     {
       style,
@@ -24,7 +24,7 @@ const GridCard = forwardRef<HTMLDivElement, GridCardProps>(
       <div
         ref={ref}
         style={style}
-        className={`bg-gray-300 rounded-2xl p-6 flex flex-col overflow-hidden relative ${className || ''}`}
+        className={`bg-gray-300 rounded-4xl p-6 flex flex-col overflow-hidden relative ${className || ''}`}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
         onTouchEnd={onTouchEnd}
