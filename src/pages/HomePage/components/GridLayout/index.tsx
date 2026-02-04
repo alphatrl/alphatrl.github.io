@@ -29,11 +29,13 @@ const GridLayout: React.FC = () => {
   });
 
   const cardHeight = React.useMemo(() => {
-    return (
-      DashboardRowHeight?.[breakpoint as Breakpoint] ??
-      DashboardBreakpoints['lg']
-    );
-  }, [breakpoint]);
+    // We want the grid items to be square, so rowHeight should equal the column width
+    // Formula: (containerWidth - (cols - 1) * marginX) / cols
+    const margin = 16;
+    if (!width) return DashboardRowHeight[breakpoint as Breakpoint] || 150;
+
+    return (width - (cols - 1) * margin) / cols;
+  }, [breakpoint, width, cols]);
 
   return (
     <div

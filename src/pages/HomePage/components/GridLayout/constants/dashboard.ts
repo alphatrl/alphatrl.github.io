@@ -4,16 +4,64 @@ import { PortfolioKeyEnum } from '../types';
 
 export const DashboardLayout: ResponsiveLayouts<Breakpoint> = {
   lg: [
-    { i: PortfolioKeyEnum.ME, x: 0, y: 0, w: 2, h: 2 },
-    { i: PortfolioKeyEnum.RACE_COUNTDOWN, x: 2, y: 0, w: 1, h: 2 },
-    { i: PortfolioKeyEnum.TASKADE, x: 3, y: 0, w: 1, h: 4 },
+    {
+      i: PortfolioKeyEnum.ME,
+      x: 0,
+      y: 0,
+      w: 2,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.RACE_COUNTDOWN,
+      x: 2,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.TASKADE,
+      x: 3,
+      y: 0,
+      w: 1,
+      h: 2,
+    },
     // Row 2
-    { i: PortfolioKeyEnum.CONTACT, x: 0, y: 2, w: 1, h: 2 },
-    { i: PortfolioKeyEnum.CV, x: 1, y: 2, w: 1, h: 2 },
-    { i: PortfolioKeyEnum.CLASSMAID, x: 2, y: 2, w: 1, h: 4 },
+    {
+      i: PortfolioKeyEnum.CONTACT,
+      x: 0,
+      y: 2,
+      w: 1,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.CV,
+      x: 1,
+      y: 2,
+      w: 1,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.CLASSMAID,
+      x: 2,
+      y: 2,
+      w: 1,
+      h: 2,
+    },
     // Row 3
-    { i: PortfolioKeyEnum.HUAT, x: 0, y: 4, w: 2, h: 2 },
-    { i: PortfolioKeyEnum.PEBBLE_MINIMAL, x: 3, y: 4, w: 1, h: 2 },
+    {
+      i: PortfolioKeyEnum.HUAT,
+      x: 0,
+      y: 4,
+      w: 2,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.PEBBLE_MINIMAL,
+      x: 3,
+      y: 4,
+      w: 1,
+      h: 1,
+    },
   ],
   md: [
     { i: PortfolioKeyEnum.ME, x: 0, y: 0, w: 2, h: 2 },
