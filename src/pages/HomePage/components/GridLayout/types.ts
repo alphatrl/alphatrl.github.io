@@ -14,7 +14,6 @@ export interface PortfolioBaseItem {
 }
 
 export interface PortfolioItemWriting extends PortfolioBaseItem {
-  title?: string;
   content: string;
 }
 
