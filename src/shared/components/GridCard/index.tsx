@@ -24,7 +24,7 @@ const GridCard = React.forwardRef<HTMLDivElement, GridCardProps>(
       <div
         ref={ref}
         style={style}
-        className={`bg-gray-300 rounded-4xl p-6 flex flex-col overflow-hidden relative ${className || ''}`}
+        className={`bg-gray-300 rounded-4xl font-normal p-8 text-lg flex flex-col overflow-hidden relative ${className || ''}`}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
         onTouchEnd={onTouchEnd}
