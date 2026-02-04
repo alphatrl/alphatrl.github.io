@@ -10,6 +10,7 @@ import {
 } from 'react-grid-layout';
 
 import GridCard from '../../../../shared/components/GridCard';
+import MeCard from './components/MeCard';
 import {
   DashboardBreakpoints,
   DashboardCols,
@@ -50,9 +51,7 @@ const GridLayout: React.FC = () => {
             margin: [16, 16],
           }}
         >
-          <GridCard key={PortfolioKeyEnum.ME} title="Hey I'm Amos">
-            <p className="text-gray-600">Full Stack Developer...</p>
-          </GridCard>
+          <MeCard key={PortfolioKeyEnum.ME} />
 
           <GridCard
             key={PortfolioKeyEnum.RACE_COUNTDOWN}
