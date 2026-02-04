@@ -16,7 +16,11 @@ const MeCard = React.forwardRef<
       onTouchEnd={onTouchEnd}
       {...props}
     >
-      <p className="text-gray-600">Full Stack Developer...</p>
+      <p className="text-gray-900">
+        Hey! I'm <span className="font-bold">Amos</span>, a software developer
+        from Singapore. My goal is simple: To turn complex problems into
+        human-centric tools.
+      </p>
     </GridCard>
   );
 });
