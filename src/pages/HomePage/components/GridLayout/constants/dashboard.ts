@@ -64,14 +64,64 @@ export const DashboardLayout: ResponsiveLayouts<Breakpoint> = {
     },
   ],
   md: [
-    { i: PortfolioKeyEnum.ME, x: 0, y: 0, w: 2, h: 2 },
-    { i: PortfolioKeyEnum.RACE_COUNTDOWN, x: 2, y: 0, w: 1, h: 2 },
-    { i: PortfolioKeyEnum.TASKADE, x: 3, y: 0, w: 1, h: 4 },
-    { i: PortfolioKeyEnum.CONTACT, x: 0, y: 2, w: 1, h: 2 },
-    { i: PortfolioKeyEnum.CV, x: 1, y: 2, w: 1, h: 2 },
-    { i: PortfolioKeyEnum.CLASSMAID, x: 2, y: 2, w: 1, h: 4 },
-    { i: PortfolioKeyEnum.HUAT, x: 0, y: 4, w: 2, h: 2 },
-    { i: PortfolioKeyEnum.PEBBLE_MINIMAL, x: 3, y: 4, w: 1, h: 2 },
+    {
+      i: PortfolioKeyEnum.ME,
+      x: 0,
+      y: 0,
+      w: 2,
+      h: 2,
+    },
+    {
+      i: PortfolioKeyEnum.RACE_COUNTDOWN,
+      x: 2,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.TASKADE,
+      x: 3,
+      y: 0,
+      w: 1,
+      h: 2,
+    },
+    // Row 2
+    {
+      i: PortfolioKeyEnum.CONTACT,
+      x: 0,
+      y: 2,
+      w: 1,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.CV,
+      x: 1,
+      y: 2,
+      w: 1,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.CLASSMAID,
+      x: 2,
+      y: 2,
+      w: 1,
+      h: 2,
+    },
+    // Row 3
+    {
+      i: PortfolioKeyEnum.HUAT,
+      x: 0,
+      y: 4,
+      w: 2,
+      h: 1,
+    },
+    {
+      i: PortfolioKeyEnum.PEBBLE_MINIMAL,
+      x: 3,
+      y: 4,
+      w: 1,
+      h: 1,
+    },
   ],
   sm: [
     { i: PortfolioKeyEnum.ME, x: 0, y: 0, w: 2, h: 2 },
@@ -86,8 +136,8 @@ export const DashboardLayout: ResponsiveLayouts<Breakpoint> = {
 };
 
 export const DashboardBreakpoints: Record<Breakpoint, number> = {
-  lg: 1024,
-  md: 768,
+  lg: 1000,
+  md: 700,
   sm: 480,
 };
 
@@ -98,7 +148,9 @@ export const DashboardCols: Record<Breakpoint, number> = {
 };
 
 export const DashboardRowHeight: Record<Breakpoint, number> = {
-  lg: 150,
-  md: 150,
+  lg: 240,
+  md: 240,
   sm: 240,
 };
+
+export const DashboardMargin = 16;

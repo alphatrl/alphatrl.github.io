@@ -15,6 +15,7 @@ import {
   DashboardBreakpoints,
   DashboardCols,
   DashboardLayout,
+  DashboardMargin,
   DashboardRowHeight,
 } from './constants/dashboard';
 import { PortfolioKeyEnum } from './types';
@@ -31,16 +32,15 @@ const GridLayout: React.FC = () => {
   const cardHeight = React.useMemo(() => {
     // We want the grid items to be square, so rowHeight should equal the column width
     // Formula: (containerWidth - (cols - 1) * marginX) / cols
-    const margin = 16;
     if (!width) return DashboardRowHeight[breakpoint as Breakpoint] || 150;
 
-    return (width - (cols - 1) * margin) / cols;
+    return (width - (cols - 1) * DashboardMargin) / cols;
   }, [breakpoint, width, cols]);
 
   return (
     <div
       ref={containerRef}
-      className="w-full h-full max-w-6xl p-4 mx-auto overflow-y-scroll"
+      className="w-full h-full max-w-sm md:max-w-3xl xl:max-w-7xl p-4 md:px-8 mx-auto overflow-y-scroll"
     >
       {mounted && (
         <ResponsiveGridLayout
@@ -50,7 +50,7 @@ const GridLayout: React.FC = () => {
           gridConfig={{
             cols,
             rowHeight: cardHeight,
-            margin: [16, 16],
+            margin: [DashboardMargin, DashboardMargin],
           }}
         >
           <MeCard key={PortfolioKeyEnum.ME} />
