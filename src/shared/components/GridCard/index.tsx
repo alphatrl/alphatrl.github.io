@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import React from 'react';
 
 interface GridCardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -24,7 +25,12 @@ const GridCard = React.forwardRef<HTMLDivElement, GridCardProps>(
       <div
         ref={ref}
         style={style}
-        className={`bg-gray-300 rounded-4xl font-normal p-8 text-lg flex flex-col overflow-hidden relative ${className || ''}`}
+        className={cn(
+          'bg-white dark:bg-gray-600 rounded-4xl flex flex-col overflow-hidden relative',
+          'font-normal text-base md:text-lg',
+          'p-4 sm:p-8',
+          className,
+        )}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
         onTouchEnd={onTouchEnd}
