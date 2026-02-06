@@ -11,6 +11,7 @@ import {
 
 import GridCard from '../../../../shared/components/GridCard';
 import ClassmaidCard from './components/ClassmaidCard';
+import HuatCard from './components/HuatCard';
 import MeCard from './components/MeCard';
 import PebbleMinimalCard from './components/PebbleMinimalCard';
 import RunningCountdownCard from './components/RunningCountdownCard';
@@ -69,7 +70,7 @@ const GridLayout: React.FC = () => {
 
           <ClassmaidCard key={PortfolioKeyEnum.CLASSMAID} />
 
-          <GridCard key={PortfolioKeyEnum.HUAT} title="Huat" />
+          <HuatCard key={PortfolioKeyEnum.HUAT} />
 
           <PebbleMinimalCard key={PortfolioKeyEnum.PEBBLE_MINIMAL} />
         </ResponsiveGridLayout>
