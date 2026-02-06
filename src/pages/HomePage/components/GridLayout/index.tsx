@@ -11,6 +11,7 @@ import {
 
 import GridCard from '../../../../shared/components/GridCard';
 import MeCard from './components/MeCard';
+import PebbleMinimalCard from './components/PebbleMinimalCard';
 import TaskadeCard from './components/TaskadeCard';
 import {
   DashboardBreakpoints,
@@ -71,7 +72,7 @@ const GridLayout: React.FC = () => {
 
           <GridCard key={PortfolioKeyEnum.HUAT} title="Huat" />
 
-          <GridCard key={PortfolioKeyEnum.PEBBLE_MINIMAL} title="Pebble" />
+          <PebbleMinimalCard key={PortfolioKeyEnum.PEBBLE_MINIMAL} />
         </ResponsiveGridLayout>
       )}
     </div>
