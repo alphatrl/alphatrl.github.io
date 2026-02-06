@@ -20,7 +20,7 @@ const MeCard = React.forwardRef<
       <img
         src="/images/profile/amos.jpeg"
         alt="Profile Picture"
-        className={cn('w-20 h-20 sm:w-24 sm:h-24 rounded-full')}
+        className={'w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full'}
       />
       <p className="text-gray-900">
         Hey! I'm <span className="font-bold">Amos</span>, a software developer
