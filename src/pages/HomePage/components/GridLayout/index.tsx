@@ -13,6 +13,7 @@ import GridCard from '../../../../shared/components/GridCard';
 import ClassmaidCard from './components/ClassmaidCard';
 import MeCard from './components/MeCard';
 import PebbleMinimalCard from './components/PebbleMinimalCard';
+import RunningCountdownCard from './components/RunningCountdownCard';
 import TaskadeCard from './components/TaskadeCard';
 import {
   DashboardBreakpoints,
@@ -58,10 +59,7 @@ const GridLayout: React.FC = () => {
         >
           <MeCard key={PortfolioKeyEnum.ME} />
 
-          <GridCard
-            key={PortfolioKeyEnum.RACE_COUNTDOWN}
-            title="Running Countdown lol"
-          />
+          <RunningCountdownCard key={PortfolioKeyEnum.RACE_COUNTDOWN} />
 
           <TaskadeCard key={PortfolioKeyEnum.TASKADE} />
 
