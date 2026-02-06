@@ -10,6 +10,7 @@ import {
 } from 'react-grid-layout';
 
 import GridCard from '../../../../shared/components/GridCard';
+import ClassmaidCard from './components/ClassmaidCard';
 import MeCard from './components/MeCard';
 import PebbleMinimalCard from './components/PebbleMinimalCard';
 import TaskadeCard from './components/TaskadeCard';
@@ -68,7 +69,7 @@ const GridLayout: React.FC = () => {
 
           <GridCard key={PortfolioKeyEnum.CV} title="CV?" />
 
-          <GridCard key={PortfolioKeyEnum.CLASSMAID} title="Classmaid" />
+          <ClassmaidCard key={PortfolioKeyEnum.CLASSMAID} />
 
           <GridCard key={PortfolioKeyEnum.HUAT} title="Huat" />
 
