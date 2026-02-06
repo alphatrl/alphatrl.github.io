@@ -28,7 +28,7 @@ const ClassmaidCard = React.forwardRef<
         alt="Taskade Widget"
         className={cn(
           'z-1 object-contain drop-shadow-2xl transform-gpu -rotate-30',
-          'scale-200 ms-60 mb-20 md:ms-72 md:mb-28',
+          'scale-200 ms-60 mb-20 md:ms-72 md:mb-28 lg:scale-150',
         )}
       />
 

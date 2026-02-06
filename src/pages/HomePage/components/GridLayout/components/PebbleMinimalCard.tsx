@@ -16,7 +16,7 @@ const PebbleMinimalCard = React.forwardRef<
         className,
         'justify-center items-center',
         'p-0!',
-        'bg-radial from-green-500 from-30% to-green-700',
+        'bg-radial from-green-300 from-30% to-green-500',
       )}
       onMouseDown={onMouseDown}
       onMouseUp={onMouseUp}
