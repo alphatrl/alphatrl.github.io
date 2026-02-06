@@ -26,9 +26,8 @@ const GridCard = React.forwardRef<HTMLDivElement, GridCardProps>(
         ref={ref}
         style={style}
         className={cn(
-          'bg-white dark:bg-gray-600 rounded-4xl flex flex-col overflow-hidden relative',
+          'bg-white rounded-4xl flex flex-col overflow-hidden relative',
           'font-normal text-base md:text-lg',
-          'p-4 sm:p-8',
           className,
         )}
         onMouseDown={onMouseDown}

@@ -11,6 +11,7 @@ import {
 
 import GridCard from '../../../../shared/components/GridCard';
 import MeCard from './components/MeCard';
+import TaskadeCard from './components/TaskadeCard';
 import {
   DashboardBreakpoints,
   DashboardCols,
@@ -40,7 +41,7 @@ const GridLayout: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-full max-w-sm md:max-w-3xl xl:max-w-7xl p-4 md:px-8 mx-auto overflow-y-scroll"
+      className="w-full h-full max-w-sm md:max-w-4xl xl:max-w-7xl p-4 md:px-8 mx-auto"
     >
       {mounted && (
         <ResponsiveGridLayout
@@ -60,7 +61,7 @@ const GridLayout: React.FC = () => {
             title="Running Countdown lol"
           />
 
-          <GridCard key={PortfolioKeyEnum.TASKADE} title="Taskade" />
+          <TaskadeCard key={PortfolioKeyEnum.TASKADE} />
 
           <GridCard key={PortfolioKeyEnum.CONTACT} title="Contact Me" />
 
