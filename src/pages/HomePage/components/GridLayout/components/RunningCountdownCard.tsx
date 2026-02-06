@@ -45,12 +45,14 @@ const RunningCountdownCard = React.forwardRef<
           <span className="text-2xl font-bold">Run Completed</span>
         </div>
       ) : (
-        <div className="flex flex-col items-center">
-          <span className="text-6xl font-bold">{daysDiff}</span>
-          <span className="text-xl mt-2 uppercase tracking-wide">
-            Days to go
-          </span>
-          <span className="text-xs text-gray-100 mt-4 text-center tracking-wide">
+        <div className="flex flex-col items-center gap-2 md:gap-4">
+          <div className="flex flex-col items-center gap-1 md:gap-2">
+            <span className="text-5xl md:text-6xl font-bold">{daysDiff}</span>
+            <span className="text-md md:text-xl uppercase tracking-wide text-center">
+              Days to go
+            </span>
+          </div>
+          <span className="text-xs text-gray-100 text-center ">
             2XU Compression Half Marathon
           </span>
         </div>
