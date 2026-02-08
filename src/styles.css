@@ -1,9 +1,8 @@
 @import "tailwindcss";
+@import "tailwindcss-safe-area";
 
 body {
-  background-color: #fafafa;
-  color: #111111;
-
+  background-color: #EDF6F9;
   margin: 0;
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',

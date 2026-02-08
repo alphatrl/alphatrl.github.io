@@ -1,6 +1,6 @@
 import React from 'react';
 
-import config from '../config';
+import config from '../constants/siteConfig';
 
 interface Props {
   description?: string;
@@ -16,7 +16,7 @@ const SEO: React.FC<Props> = function (props) {
 
   return (
     <React.Fragment>
-      <title>{`${title} | ${siteMetadata.title}`}</title>
+      <title>{`${siteMetadata.title} | ${title}`}</title>
 
       <meta name="description" content={metaDescription} />
       <meta name="og:title" content={`${title} | ${siteMetadata.title}`} />

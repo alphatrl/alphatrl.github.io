@@ -1,21 +1,17 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 
-import Introduction from './components/Introduction';
-import Projects from './components/Projects';
-import DefaultLayout from './layout/DefaultLayout';
-import { theme } from './theme';
+import DefaultLayout from './layouts/DefaultLayout';
+import Introduction from './shared/components/Introduction';
+import Projects from './shared/components/Projects';
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <DefaultLayout title="Portfolio">
-        <div className="flex flex-col">
-          <Introduction />
-          <Projects />
-        </div>
-      </DefaultLayout>
-    </ThemeProvider>
+    <DefaultLayout title="Portfolio">
+      <div className="flex flex-col">
+        <Introduction />
+        <Projects />
+      </div>
+    </DefaultLayout>
   );
 };
 
