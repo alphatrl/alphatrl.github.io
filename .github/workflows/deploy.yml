@@ -2,16 +2,16 @@ name: deploy
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v6
@@ -23,14 +23,18 @@ jobs:
 
       - name: Build project and prepare for deployment
         env:
-          NODE_ENV: production
+          VITE_EMAIL_ADDRESS: ${{ vars.EMAIL_ADDRESS }}
+          VITE_LINKEDIN_USERNAME: ${{ vars.USERNAME_LINKEDIN }}
+          VITE_GITHUB_USERNAME: ${{ vars.USERNAME_GITHUB }}
+          VITE_TWITTER_USERNAME: ${{ vars.USERNAME_TWITTER }}
+          VITE_CV_URL: ${{ vars.CV_URL }}
         run: |
           yarn build
           touch dist/.nojekyll
           cp CNAME ./dist
 
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v4
         if: success()
         with:
           target_branch: gh-pages
