@@ -42,17 +42,19 @@ const RunningCountdownCard = React.forwardRef<
     >
       {isCompleted ? (
         <div className="text-center">
-          <span className="text-2xl font-bold">Run Completed</span>
+          <span className="text-xl sm:text-2xl font-bold">Run Completed</span>
         </div>
       ) : (
-        <div className="flex flex-col items-center gap-2 md:gap-4">
-          <div className="flex flex-col items-center gap-1 md:gap-2">
-            <span className="text-5xl md:text-6xl font-bold">{daysDiff}</span>
-            <span className="text-md md:text-xl uppercase tracking-wide text-center">
+        <div className="flex flex-col items-center gap-2 sm:gap-3 lg:gap-4">
+          <div className="flex flex-col items-center gap-1 sm:gap-2 ">
+            <span className="text-2xl sm:text-4xl lg:text-5xl font-bold">
+              {daysDiff}
+            </span>
+            <span className="text-sm sm:text-base lg:text-lg uppercase tracking-wide text-center">
               Days to go
             </span>
           </div>
-          <span className="text-xs text-gray-100 text-center ">
+          <span className="text-xs lg:base text-gray-100 text-center not-lg:leading-tight">
             2XU Compression Half Marathon
           </span>
         </div>

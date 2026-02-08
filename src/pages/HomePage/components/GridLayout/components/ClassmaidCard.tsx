@@ -15,7 +15,6 @@ const ClassmaidCard = React.forwardRef<
       className={cn(
         className,
         'justify-center items-center',
-        'p-0!',
         'bg-radial from-blue-400 from-30% to-blue-700',
       )}
       onMouseDown={onMouseDown}
@@ -28,7 +27,7 @@ const ClassmaidCard = React.forwardRef<
         alt="Taskade Widget"
         className={cn(
           'z-1 object-contain drop-shadow-2xl transform-gpu -rotate-30',
-          'scale-200 ms-60 mb-20 md:ms-72 md:mb-28 lg:scale-150',
+          'scale-200 ms-60 mb-20 md:ms-72 md:mb-28 lg:scale-150 lg:ms-42 xl:ms-80',
         )}
       />
 

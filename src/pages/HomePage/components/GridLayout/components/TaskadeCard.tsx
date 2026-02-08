@@ -12,17 +12,16 @@ const TaskadeCard = React.forwardRef<
     <GridCard
       ref={ref}
       style={style}
-      className={cn(className, 'justify-center items-center', 'p-0!')}
+      className={cn(
+        className,
+        'justify-center items-center',
+        'bg-radial from-[#ff2d60] from-30% to-[#EB4563]',
+      )}
       onMouseDown={onMouseDown}
       onMouseUp={onMouseUp}
       onTouchEnd={onTouchEnd}
       {...props}
     >
-      <img
-        src="/images/background/background-1.png"
-        className="z-0 absolute object-fill w-full h-full"
-      />
-
       <img
         src="/images/project/taskade-widget-1.png"
         alt="Taskade Widget"

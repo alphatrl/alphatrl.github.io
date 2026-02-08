@@ -26,7 +26,7 @@ const PebbleMinimalCard = React.forwardRef<
       <img
         src="/images/project/pebble-minimal.png"
         alt="Taskade Widget"
-        className={cn('z-1 w-5/6 h-5/6 object-contain', 'drop-shadow-2xl')}
+        className={cn('z-1 w-5/6 h-5/6 object-contain drop-shadow-2xl')}
       />
 
       <ExpandableButton
