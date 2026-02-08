@@ -9,8 +9,9 @@ import {
   useResponsiveLayout,
 } from 'react-grid-layout';
 
-import GridCard from '../../../../shared/components/GridCard';
 import ClassmaidCard from './components/ClassmaidCard';
+import ContactMeCard from './components/ContactMeCard';
+import CVCard from './components/CVCard';
 import HuatCard from './components/HuatCard';
 import MeCard from './components/MeCard';
 import PebbleMinimalCard from './components/PebbleMinimalCard';
@@ -64,9 +65,9 @@ const GridLayout: React.FC = () => {
 
           <TaskadeCard key={PortfolioKeyEnum.TASKADE} />
 
-          <GridCard key={PortfolioKeyEnum.CONTACT} title="Contact Me" />
+          <ContactMeCard key={PortfolioKeyEnum.CONTACT} />
 
-          <GridCard key={PortfolioKeyEnum.CV} title="CV?" />
+          <CVCard key={PortfolioKeyEnum.CV} />
 
           <ClassmaidCard key={PortfolioKeyEnum.CLASSMAID} />
 
