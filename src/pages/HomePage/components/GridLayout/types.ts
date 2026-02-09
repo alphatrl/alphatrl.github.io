@@ -9,6 +9,14 @@ export enum PortfolioKeyEnum {
   PEBBLE_MINIMAL = 'project_pebble_minimal',
 }
 
+export enum FilterType {
+  ALL = 'All',
+  ABOUT = 'About',
+  PROJECTS = 'Projects',
+  HOBBIES = 'Hobbies',
+  // WRITING = 'Writing', // Hidden for now
+}
+
 export interface PortfolioBaseItem {
   id: PortfolioKeyEnum;
 }
