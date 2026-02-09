@@ -28,7 +28,7 @@ const HuatCard = React.forwardRef<
         alt="Huat App"
         className={cn(
           'z-1 object-contain drop-shadow-2xl transform-gpu -rotate-30',
-          'scale-150 ms-72 mb-0 md:scale-85 md:ms-12 md:-mb-12',
+          'scale-150 ms-36 mb-0 md:scale-85 md:ms-12 md:-mb-12',
         )}
       />
 
