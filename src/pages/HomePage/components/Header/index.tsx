@@ -18,7 +18,7 @@ const Header: React.FC<Props> = ({ activeFilter, onFilterChange }) => {
   ];
 
   return (
-    <div className="w-full flex justify-center py-6">
+    <div className="w-full flex justify-center">
       <div
         className={cn(
           'flex p-1 bg-gray-100/80 dark:bg-zinc-800/80 backdrop-blur-md rounded-full shadow-sm relative overflow-hidden',
